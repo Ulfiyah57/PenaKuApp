@@ -1,0 +1,157 @@
+/*Toggle Button dan Side Nav --- */
+@media (max-width: 768px) {
+  #menu-toggle {
+    top: 15px;
+    right: 15px;
+  }
+
+  .side-navigation {
+    width: 70%;
+  }
+}
+
+/* Animasi dasar untuk transisi */
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes move-left {
+  to {
+    transform: translateX(-30px);
+  }
+}
+
+@keyframes move-right {
+  from {
+    transform: translateX(30px);
+  }
+}
+
+@media screen and (width > 600px) {
+  ::view-transition-old(root) {
+    animation:
+      disappear 90ms cubic-bezier(0.4, 0, 1, 1) both,
+      move-left 300ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+
+  ::view-transition-new(root) {
+    animation:
+      appear 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both,
+      move-right 300ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+
+  form .form-controls {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Utama: Form Login dan Registrasi */
+  .form-register,
+  .form-login {
+    border: 1px solid #d4d4d4;
+  }
+
+  /* Detail Laporan */
+  .stories-view__gallery {
+    height: 400px;
+  }
+
+  .stories-view__content {
+    inset-block-start: -150px;
+  }
+
+  /* Dokumen Baru */
+  .doc-upload__actions {
+    flex-direction: row;
+  }
+
+  .doc-upload__preview-grid {
+    grid-template-columns: repeat(2, minmax(200px, 300px));
+  }
+}
+
+@media screen and (width > 800px) {
+  /* Area Peta */
+  .map-wrapper,
+  .map-display {
+    height: 500px;
+  }
+
+  .stories-list {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+
+  /* Detail Laporan */
+  .stories-view__content {
+    inset-block-start: -200px;
+  }
+
+  .stories-view__gallery {
+    height: 500px;
+  }
+
+  /* Dokumen Baru */
+  .doc-upload__preview-grid {
+    grid-template-columns: repeat(3, minmax(200px, 300px));
+  }
+
+  /* Footer */
+  .footer-wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (width > 1000px) {
+  /* Header */
+  .nav-panel {
+    min-height: auto;
+    width: auto;
+    padding: 0;
+    background-color: transparent;
+
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: static;
+    transform: none;
+    opacity: 1;
+  }
+
+  .nav-main,
+  .nav-list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-item a {
+    display: inline-flex;
+  }
+
+  .toggle-nav {
+    display: none;
+  }
+
+  /* Main Map Area */
+  .map-wrapper,
+  .map-display {
+    height: 600px;
+  }
+
+  .stories-list {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+
+  .stories-view__gallery {
+    height: 600px;
+  }
+}

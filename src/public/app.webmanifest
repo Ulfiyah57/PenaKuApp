@@ -1,0 +1,127 @@
+{
+  "id": "/#/",
+  "start_url": "/#/",
+  "scope": "/",
+  "name": "PenaKu App",
+  "short_name": "PenaKu",
+  "description": "PenaKu adalah aplikasi web yang memungkinkan pengguna untuk membagikan cerita dan foto berdasarkan lokasi di peta. Temukan dan jelajahi kisah inspiratif dari berbagai penjuru Indonesia, serta abadikan momenmu langsung dari tempat kejadian.",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#d97706",
+  "icons": [ 
+  {
+    "purpose": "maskable",
+    "sizes": "48x48",
+    "src": "images/icon/maskable_icon_x48.png",
+    "type": "image/png"
+  },
+  {
+    "purpose": "maskable",
+    "sizes": "72x72",
+    "src": "images/icon/maskable_icon_x72.png",
+    "type": "image/png"
+  },
+  {
+    "purpose": "maskable",
+    "sizes": "96x96",
+    "src": "images/icon/maskable_icon_x96.png",
+    "type": "image/png"
+  },
+  {
+    "purpose": "maskable",
+    "sizes": "128x128",
+    "src": "images/icon/maskable_icon_x128.png",
+    "type": "image/png"
+  },
+  {
+    "purpose": "maskable",
+    "sizes": "144x144",
+    "src": "images/icon/maskable_icon_x144.png",
+    "type": "image/png"
+  },
+  {
+    "purpose": "maskable",
+    "sizes": "192x192",
+    "src": "images/icon/maskable_icon_x192.png",
+    "type": "image/png"
+  },
+  {
+    "purpose": "maskable",
+    "sizes": "384x384",
+    "src": "images/icon/maskable_icon_x384.png",
+    "type": "image/png"
+  },
+  {
+    "purpose": "maskable",
+    "sizes": "512x512",
+    "src": "images/icon/maskable_icon_x512.png",
+    "type": "image/png"
+  }
+],
+"screenshots": [
+    {
+      "src": "images/screenshots/PenaKuApp_001.png",
+      "sizes": "1920x890",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "images/screenshots/PenaKuApp_002.png",
+      "sizes": "1920x950",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+     {
+      "src": "images/screenshots/PenaKuApp_003.png",
+      "sizes": "1920x1018",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "images/screenshots/PenaKuApp_004.png",
+      "sizes": "1080x2213",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "images/screenshots/PenaKuApp_005.png",
+      "sizes": "1080x1204",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "images/screenshots/PenaKuApp_006.png",
+      "sizes": "1080x1158",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+    ],
+    "shortcuts": [
+    {
+      "name": "New Stories ",
+      "short_name": "New",
+      "description": "Someone create new stories.",
+      "url": "/?source=pwa#/new",
+      "icons": [
+        {
+          "src": "images/icon/add-x512.png",
+          "type": "image/png",
+          "sizes": "512x510"
+        }
+      ]
+    },
+    {
+      "name": "Saved Stories ",
+      "short_name": "Saved",
+      "description": "Look at the our story list saved.",
+      "url": "/?source=pwa#/bookmark",
+      "icons": [
+        {
+          "src": "images/icon/bookmark-x512.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ]
+    }
+  ]
+}
